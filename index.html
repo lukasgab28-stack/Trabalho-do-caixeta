@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub - Guia Básico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            color: #24292e;
+            margin: 20px 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #0366d6;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        code {
+            background: #24292e;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 3px;
+            display: block;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+        
+        ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #24292e;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Git e GitHub</h1>
+        <p>Comandos Linux e Comandos GIT</p>
+    </header>
+    
+    <section>
+        <h2>O que é o Git</h2>
+        <div class="card">
+            <p>Git é um sistema de controle de versão distribuído usado para registrar o histórico de alterações em arquivos e projetos. Permite que múltiplos desenvolvedores trabalhem juntos no mesmo projeto.</p>
+        </div>
+        
+        <h2>O que é o GitHub</h2>
+        <div class="card">
+            <p>GitHub é uma plataforma de hospedagem de código-fonte baseada em Git. É um serviço web onde desenvolvedores podem armazenar projetos e colaborar com outros.</p>
+        </div>
+        
+        <h2>Diferenças entre Git e GitHub</h2>
+        <div class="card">
+            <p><strong>Git</strong> é o software de controle de versão que você instala localmente.</p>
+            <p><strong>GitHub</strong> é a plataforma online que hospeda repositórios Git.</p>
+        </div>
+        
+        <h2>Principais comandos Linux para Git Bash</h2>
+        <code>ls - Listar arquivos e diretórios</code>
+        <code>cd [diretório] - Navegar entre diretórios</code>
+        <code>pwd - Mostrar diretório atual</code>
+        <code>mkdir [nome] - Criar diretório</code>
+        <code>rm [arquivo] - Remover arquivo</code>
+        
+        <h2>Principais comandos Git</h2>
+        <code>git init - Inicializar repositório</code>
+        <code>git add [arquivo] - Adicionar arquivo</code>
+        <code>git commit -m "mensagem" - Criar commit</code>
+        <code>git status - Verificar status</code>
+        <code>git push - Enviar para repositório remoto</code>
+        <code>git pull - Atualizar repositório local</code>
+        
+        <h2>Como criar um repositório no GitHub</h2>
+        <ol>
+            <li>Faça login no GitHub</li>
+            <li>Clique em "+" e selecione "New repository"</li>
+            <li>Digite um nome para o repositório</li>
+            <li>Escolha entre público ou privado</li>
+            <li>Clique em "Create repository"</li>
+        </ol>
+        
+        <h2>Como ligar um projeto existente ao GitHub</h2>
+        <ol>
+            <li>Crie um novo repositório no GitHub</li>
+            <li>No terminal: <code>git init</code></li>
+            <li><code>git add .</code></li>
+            <li><code>git commit -m "primeiro commit"</code></li>
+            <li><code>git branch -M main</code></li>
+            <li><code>git remote add origin [URL_DO_REPOSITORIO]</code></li>
+            <li><code>git push -u origin main</code></li>
+        </ol>
+        
+        <h2>Como gerar uma versão com Git</h2>
+        <ol>
+            <li>Faça alterações nos arquivos</li>
+            <li><code>git add [arquivo]</code> ou <code>git add .</code></li>
+            <li><code>git commit -m "Mensagem descritiva"</code></li>
+        </ol>
+        
+        <h2>Como enviar para o GitHub</h2>
+        <ol>
+            <li>Certifique-se de ter feito commit: <code>git commit -m "mensagem"</code></li>
+            <li><code>git push origin [nome-da-branch]</code></li>
+        </ol>
+    </section>
+    
+    <footer>
+        <p>Lucas Gabriel Gonçalves De Oliveira</p>
+    </footer>
+</body>
+</html>
